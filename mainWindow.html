@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IMG - Lib</title>
+  <style> ::selection { background: white; /* WebKit/Blink Browsers */ } </style>
+<script>
+  if (typeof module === 'object') {
+  var electron = require('electron');
+  // Require in any additional modules that are Node.js only
+  window.module = module;
+  module = undefined;
+}
+</script>
+
+   <!-- Materialize css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+  <!-- Bootstrap css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Materialize js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ <!-- Materialize icons css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  
+</head>
+<body style="user-select: none;">
+
+    <nav style="height: 50px; -webkit-app-region: drag;">
+          <div class="brand-logo center" style="margin-top: -5px">IMG - Library</div>
+          <a id="close" class="btn-flat" style="float: right; margin-right: 10px;"><i class="material-icons">close</i></a>
+          <a id="fullscreen" class="btn-flat" style="float: right; margin-right: 11px;"><i class="material-icons">fullscreen</i></a>
+          <a id="minimise" class="btn-flat" style="float: right; margin-right: 11px;"><i class="material-icons">remove</i></a>
+    <script>
+    const $ = require('jquery');
+const { remote } = require('electron');
+
+var win = remote.getCurrentWindow();
+
+$('#minimise').click(function(){
+win.minimize();
+});
+
+$('#fullscreen').click(function(){
+if(!win.isMaximized()){
+    win.maximize();
+}
+else{
+    win.unmaximize();
+}
+});
+
+
+$('#close').click(function(){
+   win.close(); 
+});
+    </script>
+        </nav>
+
+      <img src="./img1.jpg" alt="" style="height: 400px; width: 100%">
+              
+  
+        <div class="container">
+        
+    <div class="row" style="margin-top: 10px; width: 100%; margin-left: 5%">
+    
+
+      
+        <a href="./show.html">
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 1</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    
+      
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 2</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 3</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 4</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 5</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 6</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 7</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 8</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6" style="max-width: 270px; width: 70%; ">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Category 9</span>
+              <p>Total: 0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      
+  <script>
+   $(document).ready(function(){
+    $('.slider').slider();
+  });
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+      
+  </script>
+</body>
+</html>

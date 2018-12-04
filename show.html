@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HLib</title>
+  <style> ::selection { background: white; /* WebKit/Blink Browsers */ } </style>
+<script>
+  if (typeof module === 'object') {
+  var electron = require('electron');
+  // Require in any additional modules that are Node.js only
+  window.module = module;
+  module = undefined;
+}
+</script>
+
+   <!-- Materialize css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+  <!-- Bootstrap css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Materialize js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ <!-- Materialize icons css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+          <div class="brand-logo center">HLib</div>
+          <a class="waves-effect waves-light btn" style="margin-left: 10px; max-width: 110px; width: 80%;" href="./mainWindow.html">Back</a>
+      </nav>
+      <div class="row" style="margin-top: 10px; margin-left: 20px">
+        <div class="col s12 m7" style="max-width: 400px; width: 100%; ">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="https://materializecss.com/images/sample-1.jpg">
+            </div>
+            <div class="card-content">
+              <p>Image Description</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m7" style="max-width: 400px; width: 100%;">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://materializecss.com/images/sample-1.jpg">
+              </div>
+              <div class="card-content">
+                <p>Image Description</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m7" style="max-width: 400px; width: 100%;">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://materializecss.com/images/sample-1.jpg">
+              </div>
+              <div class="card-content">
+                <p>Image Description</p>
+              </div>
+            </div>
+          </div>
+
+    
+
+          
+      </div>
+
+     
+  <script>
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</body>
+</html>

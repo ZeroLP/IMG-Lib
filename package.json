@@ -1,0 +1,45 @@
+{
+  "name": "testapp1",
+  "version": "1.0.0",
+  "description": "testing purpose",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder build --mac"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "materialize-css": "^0.100.2",
+    "yarn": "^1.12.3"
+  },
+  "devDependencies": {
+    "electron": "^2.0.3",
+    "electron-builder": "^20.33.2",
+    "electron-log": "^2.2.16"
+  },
+  "build": {
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.education",
+      "target": [
+        "zip",
+        "dmg"
+      ],
+      "type": "distribution"
+    }
+  }
+}
